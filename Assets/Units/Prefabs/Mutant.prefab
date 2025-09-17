@@ -516,7 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 2.2
   runSpeed: 4.5
-  rotationSpeed: 720
+  rotationSpeed: 72
   jumpHeight: 1.2
   gravity: -9.81
 --- !u!114 &-1167641203847289891
