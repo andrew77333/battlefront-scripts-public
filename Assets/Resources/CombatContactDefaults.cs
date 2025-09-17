@@ -4,8 +4,6 @@
 using UnityEditor; // только в редакторе
 #endif
 
-// FOR TEST CombatContactDefaults.cs 10:37
-
 /// <summary>
 /// Глобальные дефолты фильтров "контакта удара":
 /// - фронтальный сектор (Front Arc)
