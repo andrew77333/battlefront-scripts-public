@@ -4,7 +4,7 @@
 using UnityEditor; // только в редакторе
 #endif
 
-// bbbbbbbbbbb 12:31
+// yyyyyyyyyy 12:51
 
 /// <summary>
 /// Глобальные дефолты фильтров "контакта удара":
