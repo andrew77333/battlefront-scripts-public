@@ -4,7 +4,7 @@
 using UnityEditor; // только в редакторе
 #endif
 
-// FOR TEST CombatContactDefaults.cs 11:31
+// FOR TEST CombatContactDefaults.cs 11:39
 
 /// <summary>
 /// Глобальные дефолты фильтров "контакта удара":
