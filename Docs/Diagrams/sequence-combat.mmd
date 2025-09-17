@@ -1,0 +1,24 @@
+﻿sequenceDiagram
+    autonumber
+    participant Agent as CombatAgent
+    participant Anim as UnitAnimator
+    participant Att as Attacker:UnitRuntimeStats
+    participant Tar as Target:UnitRuntimeStats
+    participant DS as DamageSystem
+    participant DR as DamageResolver
+    participant Pop as DamagePopup
+
+    Agent->>Agent: FindEnemyConsideringOccupancy()
+    Agent->>Agent: Move / Orbit around target
+    Agent->>Anim: PlayAttack()
+    note over Agent,Anim: Attack phase (window)
+    Agent->>Agent: OnAttackHit() or fallback timer
+
+    Agent->>DS: Apply(Tar, amount, isCrit, pos, Att, Physical)
+    alt Resolver enabled
+        DS->>DR: EnqueueDamage(...)
+        note over DR: LateUpdate flush (strict order)
+    end
+    DS->>Tar: ApplyImmediate(...)\n(Evasion/Armor/Block/Resists)
+    DS->>Pop: Spawn damage popup
+    Tar-->>Agent: Died? notify

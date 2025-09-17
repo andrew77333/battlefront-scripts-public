@@ -1,0 +1,55 @@
+﻿graph TD
+
+%% ===== Data (configs) =====
+    subgraph Data
+        SB[StatBlock]
+        UA[UnitArchetype]
+        ULL[UnitLevelList]
+        URL[UnitRankList]
+        UAP[UnitAnimationProfile]
+        CCD[CombatContactDefaults]
+    end
+
+%% ===== Runtime (logic) =====
+    subgraph Runtime
+        U[Unit GO]
+        URS[UnitRuntimeStats]
+        UT[UnitTeam]
+        CA[CombatAgent]
+        UAnim[UnitAnimator]
+        DS[DamageSystem static]
+        DR[DamageResolver MB]
+        DP[DamagePopup prefab]
+        HBL[HealthBarLink]
+        UR[UnitRegistry static]
+        AO[AttackOccupancy static]
+        TCS[TeamCohesionService]
+        BS[BattleSpawner]
+        Cam[CameraController]
+    end
+
+%% ===== Relations =====
+    U --> URS
+    U --> UT
+    U --> UAnim
+    U --> CA
+
+    URS --> UA
+    UA --> SB
+    UA --> ULL
+    UA --> URL
+    UAnim -.-> UAP
+
+    CA --> DS
+    CA -.-> CCD
+
+    DS -.-> DR
+    DS -.-> DP
+
+    HBL --> U
+    UT --> U
+
+    TCS -.-> UR
+    AO -.-> UT
+    BS -.-> UT
+    Cam -.-> U

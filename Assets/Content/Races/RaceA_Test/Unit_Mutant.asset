@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761784baa4978bf45a7997802ac316dc, type: 3}
+  m_Name: Unit_Mutant
+  m_EditorClassIdentifier: 
+  DisplayName: Mutant
+  Id: 
+  Icon: {fileID: 0}
+  UnitPrefab: {fileID: 0}
+  AnimatorOverride: {fileID: 0}
+  BaseStats:
+    DamageMin: 5
+    DamageMax: 10
+    AttackSpeed: 1
+    AttackRange: 1.8
+    CritChance: 0
+    CritMultiplier: 2
+    ArmorPenetrationFlat: 0
+    ArmorPenetrationPct: 0
+    Health: 100
+    HealthRegen: 0
+    Armor: 0
+    MagicResist: 0
+    Evasion: 0
+    BlockChance: 0
+    MoveSpeed: 2.5
+    AggroRadius: 6
+    StopDistance: 1.4
+    CostGold: 0
+    CostCrystal: 0
+    Supply: 1
+    ProductionTime: 2
+  UnitLevelListRef: {fileID: 11400000, guid: f03ce440d19dd04439f27e2835a43b89, type: 2}
+  UnitRankListRef: {fileID: 11400000, guid: 898e4cc370cf4f34e9e8a6f8d07f0b31, type: 2}
+  AIProfileRef: {fileID: 0}

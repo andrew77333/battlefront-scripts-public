@@ -1,0 +1,56 @@
+﻿classDiagram
+
+    class Unit {
+        +void TakeDamage(float amount)
+        +bool IsDead()
+    }
+
+    class UnitRuntimeStats
+    class UnitTeam
+
+    class CombatAgent {
+        +void Tick()
+        +void TryAttack()
+    }
+
+    class UnitAnimator
+    class StatBlock
+    class UnitArchetype
+    class UnitLevelList
+    class UnitRankList
+    class UnitAnimationProfile
+    class CombatContactDefaults
+    class DamageSystem
+    class DamageResolver
+    class DamagePopup
+    class HealthBarLink
+    class UnitRegistry
+    class AttackOccupancy
+    class TeamCohesionService
+    class BattleSpawner
+    class CameraController
+
+    Unit --> UnitRuntimeStats : has
+    Unit --> UnitTeam : has
+    Unit --> UnitAnimator : optional
+    Unit --> CombatAgent : optional
+
+    UnitRuntimeStats --> UnitArchetype : uses
+    UnitArchetype --> StatBlock : base stats
+    UnitArchetype --> UnitLevelList : levels
+    UnitArchetype --> UnitRankList : ranks
+    UnitAnimator --> UnitAnimationProfile : anim profile
+
+    CombatAgent --> DamageSystem : Apply
+    CombatAgent ..> CombatContactDefaults : angles/LOS
+
+    DamageSystem ..> DamageResolver : optional
+    DamageSystem ..> DamagePopup : spawn()
+
+    HealthBarLink --> Unit : read Runtime
+    UnitTeam --> Unit : owns
+
+    TeamCohesionService ..> UnitRegistry : reads
+    AttackOccupancy ..> UnitTeam : counts
+    BattleSpawner ..> UnitTeam : spawns
+    CameraController ..> Unit : orbits

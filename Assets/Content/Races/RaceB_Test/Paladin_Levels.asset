@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d697621ef33054e41af033c3dd373918, type: 3}
+  m_Name: Paladin_Levels
+  m_EditorClassIdentifier: 
+  Levels:
+  - Level: 1
+    FlatBonuses:
+      DamageMin: 0
+      DamageMax: 0
+      AttackSpeed: 0
+      AttackRange: 0
+      CritChance: 0
+      CritMultiplier: 0
+      ArmorPenetrationFlat: 0
+      ArmorPenetrationPct: 0
+      Health: 0
+      HealthRegen: 0
+      Armor: 0
+      MagicResist: 0
+      Evasion: 0
+      BlockChance: 0
+      MoveSpeed: 0
+      AggroRadius: 0
+      StopDistance: 0
+      CostGold: 0
+      CostCrystal: 0
+      Supply: 0
+      ProductionTime: 0
+    PercentBonuses:
+      DamageMin: 0
+      DamageMax: 0
+      AttackSpeed: 0
+      AttackRange: 0
+      CritChance: 0
+      CritMultiplier: 0
+      ArmorPenetrationFlat: 0
+      ArmorPenetrationPct: 0
+      Health: 0
+      HealthRegen: 0
+      Armor: 0
+      MagicResist: 0
+      Evasion: 0
+      BlockChance: 0
+      MoveSpeed: 0
+      AggroRadius: 0
+      StopDistance: 0
+      CostGold: 0
+      CostCrystal: 0
+      Supply: 0
+      ProductionTime: 0
+    VisualPrefabOverride: {fileID: 0}
+  - Level: 2
+    FlatBonuses:
+      DamageMin: 5
+      DamageMax: 5
+      AttackSpeed: 0
+      AttackRange: 0
+      CritChance: 0
+      CritMultiplier: 0
+      ArmorPenetrationFlat: 0
+      ArmorPenetrationPct: 0
+      Health: 50
+      HealthRegen: 0
+      Armor: 0
+      MagicResist: 0
+      Evasion: 0
+      BlockChance: 0
+      MoveSpeed: 0
+      AggroRadius: 0
+      StopDistance: 0
+      CostGold: 0
+      CostCrystal: 0
+      Supply: 0
+      ProductionTime: 0
+    PercentBonuses:
+      DamageMin: 0
+      DamageMax: 0
+      AttackSpeed: 0
+      AttackRange: 0
+      CritChance: 0
+      CritMultiplier: 0
+      ArmorPenetrationFlat: 0
+      ArmorPenetrationPct: 0
+      Health: 0
+      HealthRegen: 0
+      Armor: 0
+      MagicResist: 0
+      Evasion: 0
+      BlockChance: 0
+      MoveSpeed: 0
+      AggroRadius: 0
+      StopDistance: 0
+      CostGold: 0
+      CostCrystal: 0
+      Supply: 0
+      ProductionTime: 0
+    VisualPrefabOverride: {fileID: 0}
